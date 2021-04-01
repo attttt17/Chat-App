@@ -2,7 +2,7 @@
 <html>
     <head>
    <link rel="icon" href="/img/faviocon.png">
-   <link rel = "stylesheet" href="/css/styles.min.css">
+   <link rel = "stylesheet" href="/css/styles.css">
     </head>
     <body>
         <div class="chat">
@@ -15,15 +15,15 @@
       
           <div class="compose">
             <form id = "message1">
-                <input name="message" type="text" id="message2" placeholder="Send Message" required autocomplete="off"> <button>send</button>
+                <input name="message" type="text" id="message2" placeholder="Send Message" required autocomplete="off"> <button >Send</button>
             </form>
-           <button id ="send-location">send location</button>
+           <button id ="send-location">Send Location</button>
           </div>
             
         </div>
 
         </div>
-      Chat App
+         Chat App
 
      
 
@@ -49,7 +49,7 @@
                 <span class = "message__meta">{{createdAt}}</span>
                 </p>
 
-             <p> <a href="{{url}}" target="_blank">  My current location </a> </p>
+             <p> <a href="{{url}}" target="_blank">  {{username}}'s Location </a> </p>
                    
                 </div>
 
@@ -58,7 +58,7 @@
 
         <script id="sidebar-template" type="text/html">
             <h2 class ="room-title">Room Id - {{room}}</h2>
-            <h3 class="list-title"> Users</h3>
+            <h3 class="list-title"> <b><u>Users In the Room</u> </b> </h3>
             
             <ul class="users"> 
                 {{#users}}
